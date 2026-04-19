@@ -7,7 +7,7 @@ Includes a Windows desktop viewer for UI iteration without rebuilding the APK.
 
 <div align="center">
 
-https://imgur.com/a/gPqwJl3
+[![Video Demo](https://img.shields.io/badge/Video_Demo-Watch_on_Imgur-blue?style=for-the-badge&logo=imgur)](https://imgur.com/a/gPqwJl3)
 
 </div>
 
