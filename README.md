@@ -11,9 +11,6 @@ https://imgur.com/a/gPqwJl3
 
 </div>
 
-<details>
-<summary><b>Screenshots</b></summary>
-
 <div align="center">
 <table>
 <tr>
@@ -28,8 +25,6 @@ https://imgur.com/a/gPqwJl3
 </tr>
 </table>
 </div>
-
-</details>
 
 ## Compatibility
 
