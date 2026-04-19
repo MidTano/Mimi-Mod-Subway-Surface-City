@@ -1,0 +1,58 @@
+apply plugin: 'com.android.application'
+
+android {
+    namespace 'com.sybogames.subway.surfers.game'
+    compileSdkVersion 33
+    ndkVersion "25.1.8937393"
+
+    defaultConfig {
+        applicationId "com.sybogames.subway.surfers.game"
+        minSdkVersion 21
+        targetSdkVersion 33
+        versionCode 1
+        versionName "1.0.0-mimi_mod"
+
+        externalNativeBuild {
+            cmake {
+                cppFlags "-std=c++17"
+                arguments "-DANDROID_STL=c++_shared"
+            }
+        }
+    }
+
+    signingConfigs {
+        release_config {
+            storeFile file("../keystore/mimi_mod.keystore")
+            storePassword System.getenv("MOD_STORE_PASS") ?: ""
+            keyAlias "mimi_mod_key"
+            keyPassword System.getenv("MOD_KEY_PASS") ?: ""
+        }
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.release_config
+        }
+        debug {
+            signingConfig null
+        }
+    }
+
+    externalNativeBuild {
+        cmake {
+            path "../jni/CMakeLists.txt"
+            version "3.18.1"
+        }
+    }
+
+    packagingOptions {
+        jniLibs {
+            useLegacyPackaging = true
+        }
+    }
+}
+
+dependencies {
+}
