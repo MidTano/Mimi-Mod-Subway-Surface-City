@@ -30,7 +30,7 @@ Includes a Windows desktop viewer for UI iteration without rebuilding the APK.
 
 | | Version |
 |---|---|
-| **Game** | Subway Surfers **3.41.0** (tested, may work on nearby versions) |
+| **Game** | Subway Surfers **2.10.0** (tested, may work on nearby versions) |
 | **Android** | 5.0+ (API 21), arm64-v8a / armeabi-v7a |
 | **Desktop viewer** | Windows 10/11 x64 |
 
