@@ -63,10 +63,6 @@ Each frame is composed of three draw lists:
 3. While locked, calls `ClearActiveID()` so any widget that claimed focus on the initial press releases it.
 4. On release, applies inertial decay (`v *= exp(-dt * 6)`) until the velocity falls below a threshold.
 
-## FX pipeline
-
-Glitch FX is a 520 ms animation driven from `fx::glitch::State::phase`. The heavy part of the original implementation was the 16-tap glow ring; it is now reduced to 4 cardinal taps at a single ring, which lowered the per-frame text submission count by ~70 % without visible quality loss.
-
 ## Performance notes
 
 - Font atlases are built once at startup (`fonts::load_defaults`). No runtime re-bake.
