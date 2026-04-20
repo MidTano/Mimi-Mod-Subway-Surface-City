@@ -119,7 +119,7 @@ tools\baksmali.jar   <-- https://github.com/JesusFreke/smali/releases (download 
 
 #### Step 3 -- Place template APK
 
-Copy the original Subway Surfers 3.41.0 **base APK** to:
+Copy the original Subway Surfers 2.10.0 **base APK** to:
 
 ```
 build\base_template.apk
