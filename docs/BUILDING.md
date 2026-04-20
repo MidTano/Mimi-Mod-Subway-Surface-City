@@ -105,4 +105,4 @@ The JNI entry attaches at `eglSwapBuffers` via a PLT hook, no additional injecti
 - **`apktool.jar not found`** -- download from [GitHub](https://github.com/iBotPeaches/Apktool/releases), place as `tools\apktool.jar`
 - **`baksmali.jar missing`** -- download from [GitHub](https://github.com/JesusFreke/smali/releases), rename to `tools\baksmali.jar`
 - **`MOD_STORE_PASS not set`** -- copy `scripts\local.env.bat.example` to `scripts\local.env.bat` and set passwords
-- **`template APK not found`** -- place the original Subway Surfers 3.41.0 base APK at `build\base_template.apk`
+- **`template APK not found`** -- place the original Subway Surfers 2.10.0 base APK at `build\base_template.apk`
